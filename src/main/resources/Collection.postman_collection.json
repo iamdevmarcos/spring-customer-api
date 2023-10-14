@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "55ca6d97-c28b-4514-a6bc-590f502d60b9",
+		"name": "Spring Customer API",
+		"description": "A Spring Boot API for Customer Management 👨🏻‍💻",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18052099"
+	},
+	"item": [
+		{
+			"name": "Create Customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"customerName\": \"Adidas Brasil\",\n    \"customerDocument\": \"02190648000101\",\n    \"customerAddress\": \"Alphaville Industrial, Barueri, SP\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://spring-customer-api.onrender.com/customer",
+					"protocol": "https",
+					"host": [
+						"spring-customer-api",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find All Customers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://spring-customer-api.onrender.com/customer",
+					"protocol": "https",
+					"host": [
+						"spring-customer-api",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find Customer By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://spring-customer-api.onrender.com/customer/1c80389b-f16d-4d63-a78b-e0e430cb4a40",
+					"protocol": "https",
+					"host": [
+						"spring-customer-api",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"customer",
+						"1c80389b-f16d-4d63-a78b-e0e430cb4a40"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
