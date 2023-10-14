@@ -7,4 +7,5 @@ import java.util.UUID;
 
 public interface ICustomerRepository extends JpaRepository<CustomerModel, UUID> {
     CustomerModel findByCustomerName(String customerName);
+    CustomerModel findByCustomerDocument(String customerDocument);
 }
