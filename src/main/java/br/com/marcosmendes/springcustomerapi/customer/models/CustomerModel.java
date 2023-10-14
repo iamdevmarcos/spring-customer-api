@@ -1,4 +1,4 @@
-package br.com.marcosmendes.springcustomerapi.customer;
+package br.com.marcosmendes.springcustomerapi.customer.models;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
