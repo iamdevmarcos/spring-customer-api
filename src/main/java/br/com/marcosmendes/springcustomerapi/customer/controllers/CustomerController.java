@@ -7,6 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.UUID;
 
 @RestController
 @RequestMapping("/customer")
@@ -16,11 +17,16 @@ public class CustomerController {
 
     @PostMapping
     public ResponseEntity createCustomer(@RequestBody CustomerModel customer) {
-        return customerService.createCustomer(customer);
+        return this.customerService.createCustomer(customer);
     }
 
     @GetMapping
     public List<CustomerModel> findAllCustomers() {
-        return customerService.findAllCustomers();
+        return this.customerService.findAllCustomers();
+    }
+
+    @GetMapping(value = "/{customerId}")
+    public ResponseEntity findCustomerById(@PathVariable UUID customerId) {
+        return this.customerService.findByCustomerId(customerId);
     }
 }

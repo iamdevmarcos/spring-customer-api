@@ -11,6 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.UUID;
 
 @Service
 public class CustomerService {
@@ -40,6 +41,15 @@ public class CustomerService {
     @Transactional(readOnly = true)
     public List<CustomerModel> findAllCustomers() {
         return this.customerRepository.findAll();
+    }
+
+    public ResponseEntity findByCustomerId(UUID customerId) {
+        var customer = this.customerRepository.findByCustomerId(customerId);
+
+        if (customer == null)
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Customer Not Found!");
+
+        return ResponseEntity.status(HttpStatus.OK).body(customer);
     }
 }
 
