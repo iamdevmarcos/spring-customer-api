@@ -15,7 +15,7 @@ import java.util.UUID;
 public class CustomerModel {
     @Id
     @GeneratedValue(generator = "UUID")
-    private UUID id;
+    private UUID customerId;
 
     @Column(length = 50)
     private String customerName;
