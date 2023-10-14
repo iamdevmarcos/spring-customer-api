@@ -1,4 +1,4 @@
-package br.com.marcosmendes.springcustomerapi.customer;
+package br.com.marcosmendes.springcustomerapi.customer.repositories;
 
 import br.com.marcosmendes.springcustomerapi.customer.models.CustomerModel;
 import org.springframework.data.jpa.repository.JpaRepository;
