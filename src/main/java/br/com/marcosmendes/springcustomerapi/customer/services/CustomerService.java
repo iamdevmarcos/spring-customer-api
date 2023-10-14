@@ -6,8 +6,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Service
 public class CustomerService {
@@ -28,4 +30,10 @@ public class CustomerService {
 
         return ResponseEntity.status(HttpStatus.CREATED).body(createdCustomer);
     }
+
+    @Transactional(readOnly = true)
+    public List<CustomerModel> findAllCustomers() {
+        return this.customerRepository.findAll();
+    }
 }
+
