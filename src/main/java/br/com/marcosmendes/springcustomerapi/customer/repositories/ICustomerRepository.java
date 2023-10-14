@@ -1,5 +1,6 @@
 package br.com.marcosmendes.springcustomerapi.customer;
 
+import br.com.marcosmendes.springcustomerapi.customer.models.CustomerModel;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.UUID;

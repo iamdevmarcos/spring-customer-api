@@ -16,7 +16,7 @@ public class CustomerController {
     @Autowired
     private ICustomerRepository customerRepository;
 
-    @PostMapping("/")
+    @PostMapping
     public ResponseEntity createCustomer(@RequestBody CustomerModel customer) {
         var customerAlreadyExists =
                 this.customerRepository.findByCustomerName(customer.getCustomerName());
