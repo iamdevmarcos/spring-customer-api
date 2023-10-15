@@ -10,6 +10,10 @@ A Spring Boot API for Customer Management 👨🏻‍💻
 - **Back-end:** [Spring Boot](https://spring.io/)
 - **Package Manager:** [Maven](https://maven.apache.org/)
 
+## Swagger and Endpoints
+
+You can view all the endpoints below in swagger-ui at the link: https://spring-customer-api.onrender.com/swagger-ui/index.html#/
+
 ## Create Customer
 
 ### Request
