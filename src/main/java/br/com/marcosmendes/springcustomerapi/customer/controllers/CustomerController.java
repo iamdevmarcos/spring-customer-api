@@ -24,7 +24,7 @@ public class CustomerController {
 
     @Operation(summary = "Create a client", method = "POST")
     @ApiResponses(value = {
-            @ApiResponse(responseCode = "200", description = "Ok"),
+            @ApiResponse(responseCode = "201", description = "Created"),
             @ApiResponse(responseCode = "400", description = "Customer Already Exists!"),
             @ApiResponse(responseCode = "400", description = "Customer Document Already Exists!"),
     })
