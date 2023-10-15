@@ -3,8 +3,6 @@ package br.com.marcosmendes.springcustomerapi.customer.controllers;
 import br.com.marcosmendes.springcustomerapi.customer.models.CustomerModel;
 import br.com.marcosmendes.springcustomerapi.customer.services.CustomerService;
 import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.media.Content;
-import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
